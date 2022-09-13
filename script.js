@@ -20,12 +20,17 @@ const createDiv = (task) => {
   addTaskToList(taskDiv, task);
 };
 
+const addRemove = (taskDiv, task) => {
+  const removeBtn = document.querySelector(`#btn-${task}`);
+  removeBtn.addEventListener("click", () => taskDiv.remove());
+};
+
 const addTaskToList = (taskDiv, task) => {
   taskDiv.innerHTML += `<input type="checkbox" name="task" id="task"/>
     <label for="${task}">${task}</label>
     <button id="btn-${task}">X</button>
     `;
-  taskDiv.addEventListener("click", () => taskDiv.remove());
+  addRemove(taskDiv, task);
 };
 
 const addTask = () => {

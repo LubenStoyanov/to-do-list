@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ToDoApp</title>
+  </head>
+  <body>
+    <header>
+      <h1>Kanban Board</h1>
+    </header>
+
+    <main class="vertical">
+      <div id="board" class="horizontal">
+        <div class="board-list">
+          <h2>Tasks</h2>
+          <ul id="task-list"></ul>
+        </div>
+        <div class="board-list">
+          <h2>In Progress</h2>
+          <ul id="in-progress-list"></ul>
+        </div>
+        <div class="board-list">
+          <h2>Done</h2>
+          <ul id="done-list"></ul>
+        </div>
+      </div>
+      <div class="vertical input-div">
+        <label for="task-name">Add Task</label>
+        <input type="text" name="task-name" id="task-name" />
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

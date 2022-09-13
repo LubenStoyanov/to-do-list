@@ -1,0 +1,49 @@
+.horizontal {
+  display: flex;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#board {
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.board-list ul {
+  margin-top: 20px;
+  /* min-height: 50px;
+  min-width: 200px; */
+  /* border: 1px solid grey; */
+  border-radius: 2px;
+}
+
+li {
+  margin-left: 5px;
+  /* list-style-type: none; */
+  text-align: left;
+}
+
+.input-div {
+  margin: 50px auto 0 auto;
+}
+
+#task-name {
+  height: 25px;
+}
+
+.input-div label {
+  font-size: 20px;
+}

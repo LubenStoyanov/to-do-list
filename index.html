@@ -10,24 +10,14 @@
   </head>
   <body>
     <header>
-      <h1>Kanban Board</h1>
+      <h1>Tasks</h1>
     </header>
 
     <main class="vertical">
-      <div id="board" class="horizontal">
-        <div class="board-list">
-          <h2>Tasks</h2>
-          <ul id="task-list"></ul>
-        </div>
-        <div class="board-list">
-          <h2>In Progress</h2>
-          <ul id="in-progress-list"></ul>
-        </div>
-        <div class="board-list">
-          <h2>Done</h2>
-          <ul id="done-list"></ul>
-        </div>
+      <div class="vertical">
+        <div id="task-list" class="vertical"></div>
       </div>
+
       <div class="vertical input-div">
         <label for="task-name">Add Task</label>
         <input type="text" name="task-name" id="task-name" />
